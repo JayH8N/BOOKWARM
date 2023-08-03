@@ -8,7 +8,7 @@
 import UIKit
 
 class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDataSource, UITableViewDelegate  {
-
+    //github test
     
     var movie = MovieInfo()
     var book = BookInfo()
@@ -71,8 +71,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let sb = UIStoryboard(name: "DetailScreen", bundle: nil)
         let vc = sb.instantiateViewController(identifier: BookDetailViewController.identifier) as! BookDetailViewController
         let item = book.book[indexPath.item]
-        
-        //???: -
+    
         vc.title = item.title
         vc.cover = item.image
         vc.writer = item.author
